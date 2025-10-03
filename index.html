@@ -1,24 +1,98 @@
-<!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medos ancestrais</title>
-  </head>
-  <body>
-     <header>
-    <h1>MEDOS ANCESTRAIS</h1>
-       <nav>
-         <a href="#países">Países</a>
-    </nav>
-  </header>
-    <section id="O que é folclore">
-    <h2>O que é folclore?</h2>
-    <p>Folclore é o conjunto de tradições e manifestações populares constituído por lendas, mitos, provérbios, danças e costumes, que são passados de geração em geração.</p>
-  </section>
-      <section id="Importância do folclore">
-    <h2>Por que o folclore é importante?</h2>
-      <p>O folclore nos ajuda a conectar-mos com as gerações antigas e preservar nossas tradições.</p>
-  </section>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medos Ancestrais</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial Rounded MT Bold', sans-serif;
+      height: 100vh;
+      background-color: #f8f8f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      /* Fundo ondulado com imagem */
+      background-image: url('background.png'); /* ← Substitua aqui pela sua imagem de fundo ondulado azul e branco */
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .card {
+      background-color: #FFE8B0;
+      padding: 60px 40px;
+      border-radius: 25px;
+      box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 80%;
+      max-width: 600px;
+      position: relative;
+    }
+
+    .title {
+      font-size: 2.5em;
+      color: #1F3A5F;
+      font-weight: bold;
+      display: inline-block;
+      transform: rotate(0deg);
+      letter-spacing: 2px;
+      animation: arch-text 0.5s ease-out forwards;
+    }
+
+    @keyframes arch-text {
+      0% {
+        transform: scale(0.8) translateY(20px);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .buttons {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      background-color: #1F3A5F;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 12px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: #365A88;
+      transform: scale(1.05);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">MEDOS ANCESTRAIS</div>
+
+    <div class="buttons">
+      <button class="btn">Países</button>
+      <button class="btn">Folclore</button>
+      <button class="btn">Motivo</button>
+    </div>
+  </div>
+</body>
 </html>
