@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proposta — Medos Ancestrais</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Crimson+Text&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Crimson Text', serif;
+      overflow-x: hidden;
+    }
+
+    /* Fundo com padrão xadrez ondulado */
+    .background {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #fef6dc;
+      overflow: hidden;
+    }
+
+    .background::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800' viewBox='0 0 800 800'%3E%3Cpath fill='%23ffffff' d='M0 0h800v800H0z'/%3E%3Cpath fill='%239bbaff' d='M0 100c50 20 100-20 150 0s100 40 150 0 100-20 150 0 100 40 150 0 100-20 150 0v100c-50-20-100 20-150 0s-100-40-150 0-100 20-150 0-100-40-150 0-100 20-150 0V100zM0 300c50 20 100-20 150 0s100 40 150 0 100-20 150 0 100 40 150 0 100-20 150 0v100c-50-20-100 20-150 0s-100-40-150 0-100 20-150 0-100-40-150 0-100 20-150 0V300zM0 500c50 20 100-20 150 0s100 40 150 0 100-20 150 0 100 40 150 0 100-20 150 0v100c-50-20-100 20-150 0s-100-40-150 0-100 20-150 0-100-40-150 0-100 20-150 0V500z'/%3E%3C/svg%3E");
+      background-size: cover;
+      transform: scale(1.2) rotate(-2deg);
+      opacity: 0.9;
+      z-index: 0;
+    }
+
+    /* Título em estilo retrô */
+    .title {
+      position: relative;
+      z-index: 1;
+      background-color: #fde9b3;
+      color: #13346f;
+      font-family: 'Fredoka One', cursive;
+      font-size: 3.2rem;
+      letter-spacing: 2px;
+      padding: 25px 80px;
+      border-radius: 0 0 100% 100%;
+      text-align: center;
+      box-shadow: 0 4px 0 #13346f;
+    }
+
+    /* Caixa de texto */
+    .content-box {
+      position: relative;
+      z-index: 1;
+      margin-top: 50px;
+      background-color: #fde9b3;
+      color: #1e1e1e;
+      max-width: 700px;
+      padding: 40px;
+      border-radius: 25px;
+      font-size: 1.5rem;
+      text-align: center;
+      line-height: 1.6;
+      box-shadow: 10px 10px 0 #3b3b3b33;
+    }
+
+    @media (max-width: 768px) {
+      .title {
+        font-size: 2.2rem;
+        padding: 15px 40px;
+      }
+
+      .content-box {
+        font-size: 1.2rem;
+        padding: 25px;
+        margin: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <div class="title">PROPOSTA</div>
+    <div class="content-box">
+      Um site onde exploramos as monstruosidades folclóricas ao redor do mundo, 
+      descobrindo criaturas assustadoras e macabras de alguns países de cada continente.
+    </div>
+  </div>
+</body>
+</html>
