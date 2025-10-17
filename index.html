@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Países</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Luckiest Guy', cursive;
+      background: url('bg-checker.png') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background-color: #f5deb3;
+      border-radius: 30px;
+      box-shadow: 5px 5px 0 #b8a97d;
+      width: 90%;
+      max-width: 1000px;
+      padding: 40px;
+      text-align: center;
+      position: relative;
+    }
+
+    h1 {
+      background-color: #f5deb3;
+      padding: 10px 50px;
+      border-radius: 20px;
+      display: inline-block;
+      font-size: 3rem;
+      color: #3d3a2f;
+      box-shadow: 4px 4px 0 #b8a97d;
+    }
+
+    .content {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    /* estilos dos banners (botões) */
+    a.banner {
+      background-color: #f497b6;
+      color: #3d3a2f;
+      font-size: 1.3rem;
+      padding: 8px 20px;
+      border: 4px solid #3d3a2f;
+      width: 160px;
+      position: relative;
+      text-align: center;
+      font-family: 'Luckiest Guy', cursive;
+      text-decoration: none;
+      display: inline-block;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    a.banner:hover {
+      transform: translateY(-3px);
+      box-shadow: 4px 4px 0 #3d3a2f;
+    }
+
+    a.banner::before,
+    a.banner::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      border: 25px solid transparent;
+    }
+
+    /* lado esquerdo */
+    .left .banner {
+      border-radius: 0 50px 50px 0;
+    }
+    .left .banner::before {
+      left: -25px;
+      border-right-color: #f497b6;
+    }
+
+    /* lado direito */
+    .right .banner {
+      border-radius: 50px 0 0 50px;
+    }
+    .right .banner::after {
+      right: -25px;
+      border-left-color: #f497b6;
+    }
+
+    /* espaço central */
+    .spacer {
+      width: 100px;
+      height: 200px;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+      }
+
+      .column {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .banner {
+        margin: 5px;
+      }
+
+      .spacer {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>PAÍSES</h1>
+
+    <div class="content">
+      <!-- Coluna esquerda -->
+      <div class="column left">
+        <a href="romenia.html" class="banner">Romênia</a>
+        <a href="gana.html" class="banner">Gana</a>
+        <a href="namibia.html" class="banner">Namíbia</a>
+        <a href="escocia.html" class="banner">Escócia</a>
+        <a href="india.html" class="banner">Índia</a>
+      </div>
+
+      <!-- Espaço central -->
+      <div class="spacer"></div>
+
+      <!-- Coluna direita -->
+      <div class="column right">
+        <a href="brasil.html" class="banner">Brasil</a>
+        <a href="fiji.html" class="banner">Fiji</a>
+        <a href="japao.html" class="banner">Japão</a>
+        <a href="mexico.html" class="banner">México</a>
+        <a href="honduras.html" class="banner">Honduras</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
